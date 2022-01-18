@@ -13,10 +13,13 @@ spec:
 
   # Source of the application manifests
   source:
-    repoURL: https://github.com/argoproj/argocd-example-apps.git
-    targetRevision: HEAD
-    path: guestbook
-
+#    repoURL: https://github.com/argoproj/argocd-example-apps.git
+#    targetRevision: HEAD
+#    path: guestbook
+    repoURL: 'https://charts.bitnami.com/bitnami'
+    targetRevision: 12.3.3    
+    chart: wordpress
+    
     # helm specific config
     helm:
       # Extra parameters to set (same as setting through values.yaml, but these take precedence)
