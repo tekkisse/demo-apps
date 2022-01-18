@@ -27,7 +27,7 @@ spec:
     chart: trino
   destination:
     server: 'https://kubernetes.default.svc'
-    namespace: trinotest99
+    namespace: trinotest100
   syncPolicy:
     automated:
       selfHeal: true
