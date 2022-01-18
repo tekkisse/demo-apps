@@ -2,8 +2,8 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: helm-wordpress
-  namespace: wordpress
+  name: helm-wordpress2
+  namespace: wordpress2
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
@@ -14,7 +14,7 @@ spec:
   project: default
   destination:
     server: 'https://kubernetes.default.svc'
-    namespace: wordpress
+    namespace: wordpress2
   syncPolicy:
     automated:
       selfHeal: true
