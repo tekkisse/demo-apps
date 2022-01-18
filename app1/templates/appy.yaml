@@ -55,15 +55,6 @@ spec:
       # and decide which Helm binary to use automatically. This field can be either 'v2' or 'v3'.
       version: v2
 
-    # kustomize specific config
-    kustomize:
-      # Optional kustomize version. Note: version must be configured in argocd-cm ConfigMap
-      version: v3.5.4
-      # Optional image name prefix
-      namePrefix: prod-
-      # Optional images passed to "kustomize edit set image".
-      images:
-      - gcr.io/heptio-images/ks-guestbook-demo:0.2
 
     # directory
     directory:
